@@ -130,12 +130,5 @@ class _EditBarangState extends State<EditBarang> {
     );
   }
 
-  @override
-  void dispose() {
-    id.dispose();
-    jenis_barang.dispose();
-    jumlah_barang.dispose();
-    harga_barang.dispose();
-    super.dispose();
-  }
+  
 }
