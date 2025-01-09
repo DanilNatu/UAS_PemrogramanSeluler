@@ -40,9 +40,7 @@ class _HalamanProdukState extends State<HalamanListbarang> {
   Future _deleteData(String id) async {
     try {
       final respon = 
-        await http.delete(Uri.parse('http://192.168.172.18/api_produk/delete.php'),body: {
-          "id" : id,
-      });
+      await http.delete(Uri.parse('http://192.168.172.18/api_produk/delete.php?id=$id'),);
       if (respon.statusCode == 200) {
         return true;
       } else {

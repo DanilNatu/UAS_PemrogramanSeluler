@@ -29,15 +29,15 @@ class _EditBarangState extends State<EditBarang> {
 
   Future<bool> _updateData() async {
     try {
-      final response = await http.put(
-        Uri.parse('http://192.168.172.18/api_produk/update.php'),
-        body: {
-          'id': id.text,
-          'jenis_barang': jenis_barang.text,
-          'jumlah_barang': jumlah_barang.text,
-          'harga_barang': harga_barang.text,
-        },
-      );
+      final response = 
+        await http.put(Uri.parse('http://192.168.172.18/api_produk/update.php'),
+          body: {
+            'id': id.text,
+            'jenis_barang': jenis_barang.text,
+            'jumlah_barang': jumlah_barang.text,
+            'harga_barang': harga_barang.text,
+          },
+        );
       return response.statusCode == 200;
     } catch (e) {
       print('Error: $e');
