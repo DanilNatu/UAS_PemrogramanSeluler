@@ -129,6 +129,4 @@ class _EditBarangState extends State<EditBarang> {
       ),
     );
   }
-
-  
 }
