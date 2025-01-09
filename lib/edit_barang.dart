@@ -22,8 +22,7 @@ class _EditBarangState extends State<EditBarang> {
     super.initState();
     id = TextEditingController(text: widget.ListData['id']);
     jenis_barang = TextEditingController(text: widget.ListData['jenis_barang']);
-    jumlah_barang =
-        TextEditingController(text: widget.ListData['jumlah_barang']);
+    jumlah_barang =TextEditingController(text: widget.ListData['jumlah_barang']);
     harga_barang = TextEditingController(text: widget.ListData['harga_barang']);
   }
 
