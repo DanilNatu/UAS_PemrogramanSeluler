@@ -29,7 +29,7 @@ class _EditBarangState extends State<EditBarang> {
 
   Future<bool> _updateData() async {
     try {
-      final response = await http.post(
+      final response = await http.put(
         Uri.parse('http://192.168.172.18/api_produk/update.php'),
         body: {
           'id': id.text,
